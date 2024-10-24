@@ -8,7 +8,7 @@ def resource_path(relative_path):
     """ Obtenir le chemin absolu d'une ressource, compatible avec PyInstaller """
     try:
         # PyInstaller crée un dossier temporaire lors de l'exécution
-        base_path = sys._Meipass
+        base_path = sys._MEIPASS
     except Exception:
         base_path = os.path.abspath(".")
 
